@@ -1,19 +1,19 @@
-<a href="#">
+<a [routerLink]="['content', Id]">
   <div class="small-card">
     <div class="small-card__picture">
       <img
-        src="https://uploads.jovemnerd.com.br/wp-content/uploads/2023/04/super_mario_cena_pos_creditos_2__yti0p31a-760x481.jpg"
-        alt="Mario"
+        src="{{ photoCover }}"
+        alt="{{ altCover }}"
 
       />
     </div>
     <div class="box-text">
       <div class="small-card__title">
-        <h1>Super Mario</h1>
+        <h1>{{ cardTitle }}</h1>
       </div>
       <div class="small-card__description">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac condimentum massa, ullamcorper euismod enim. Duis scelerisque, turpis quis rutrum convallis, ex quam vulputate mi, non cursus orci felis ut ipsum.
+          {{ cardDesc }}
         </p>
       </div>
     </div>

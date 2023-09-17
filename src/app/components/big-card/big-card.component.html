@@ -1,18 +1,17 @@
-<a href="#">
+<a [routerLink]="['content', Id]">
   <div class="big-card">
     <div class="big-card__picture">
       <img
-        src="https://img.r7.com/images/super-mario-bros-o-filme-05042023033730223?dimensions=771x420&no_crop
-      =true" alt="Mario"
-
+        src="{{ photoCover }}"
+        alt="{{ photoSrc }}"
       />
     </div>
     <div class="big-card__title">
-      <h1>Super Mario</h1>
+      <h1>{{ cardTitle }}</h1>
     </div>
     <div class="big-card__description">
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac condimentum massa, ullamcorper euismod enim. Duis scelerisque, turpis quis rutrum convallis, ex quam vulputate mi, non cursus orci felis ut ipsum. Ut ac consequat lectus, vel commodo arcu. Duis sagittis viverra orci, ut eleifend eros mattis eget. Suspendisse porttitor velit massa, et tempus eros bibendum nec.
+        {{ cardDescripton }}
       </p>
     </div>
   </div>
