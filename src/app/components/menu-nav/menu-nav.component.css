@@ -1,0 +1,13 @@
+.menu-nav{
+  height: 40px;
+  display: grid;
+  place-items: center;
+}
+
+.menu-nav > ul > li{
+  text-align: center;
+  list-style: none;
+  display: inline;
+  margin: 10px;
+  padding-top: 100px;
+}
